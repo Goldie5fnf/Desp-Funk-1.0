@@ -80,9 +80,7 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuAb', 'shared'));
-		//bga.scrollFactor.set(0, yScroll);
-		//bga.setGraphicSize(Std.int(bga.width * 1.175));
+	        var bga:FlxSprite = new FlxSprite().loadGraphic(Paths.image('desp/menu/menuAb', 'shared'));
 		bga.updateHitbox();
 		bga.screenCenter();
 		bga.antialiasing = ClientPrefs.globalAntialiasing;
