@@ -35,10 +35,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		#if MODS_ALLOWED 'mods', #end
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
 		'options'
 	];
 
@@ -74,7 +72,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu', 'menuUn'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuUn'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -82,7 +80,7 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu', 'menuAb'));
+	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuAb'));
 		//bga.scrollFactor.set(0, yScroll);
 		//bga.setGraphicSize(Std.int(bga.width * 1.175));
 		bga.updateHitbox();
@@ -110,7 +108,7 @@ class MainMenuState extends MusicBeatState
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
 
-		var scale:Float = 1;
+		var scale:Float = 0.5;
 		/*if(optionShit.length > 6) {
 			scale = 3 / optionShit.length;
 		}*/
