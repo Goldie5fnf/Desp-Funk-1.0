@@ -74,13 +74,21 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu', 'menuUn'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
+
+	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu', 'menuAb'));
+		//bga.scrollFactor.set(0, yScroll);
+		//bga.setGraphicSize(Std.int(bga.width * 1.175));
+		bga.updateHitbox();
+		bga.screenCenter();
+		bga.antialiasing = ClientPrefs.globalAntialiasing;
+		add(bga);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
 		camFollowPos = new FlxObject(0, 0, 1, 1);
@@ -95,7 +103,7 @@ class MainMenuState extends MusicBeatState
 		magenta.visible = false;
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		magenta.color = 0xFFfd719b;
-		add(magenta);
+		//add(magenta);
 		
 		// magenta.scrollFactor.set();
 
@@ -104,7 +112,7 @@ class MainMenuState extends MusicBeatState
 
 		var scale:Float = 1;
 		/*if(optionShit.length > 6) {
-			scale = 6 / optionShit.length;
+			scale = 3 / optionShit.length;
 		}*/
 
 		for (i in 0...optionShit.length)
@@ -118,7 +126,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
-			menuItem.screenCenter(X);
+			//menuItem.screenCenter(X);
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
@@ -212,8 +220,6 @@ class MainMenuState extends MusicBeatState
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
-
-					if(ClientPrefs.flashing) FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 
 					menuItems.forEach(function(spr:FlxSprite)
 					{
