@@ -1,0 +1,41 @@
+{
+	"storyName": "D!Vegeth",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Swag",
+			"vegdesp",
+			[
+				126,
+				0,
+				185
+			]
+		],
+		[
+			"Bitcrushed",
+			"vegdesp",
+			[
+				126,
+				0,
+				185
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "D!Vegeth"
+}

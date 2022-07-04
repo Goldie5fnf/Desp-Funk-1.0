@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="helicopter.png">
+	<!-- Created with Adobe Animate version 18.0.2.126 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hellicopet0000" x="5" y="5" width="644" height="547" frameX="0" frameY="0" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0001" x="654" y="5" width="644" height="547" frameX="0" frameY="0" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0002" x="1303" y="5" width="644" height="547" frameX="0" frameY="-2" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0003" x="5" y="557" width="644" height="547" frameX="0" frameY="-2" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0004" x="1303" y="5" width="644" height="547" frameX="0" frameY="-4" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0005" x="5" y="557" width="644" height="547" frameX="0" frameY="-4" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0006" x="1303" y="5" width="644" height="547" frameX="0" frameY="-4" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0007" x="5" y="557" width="644" height="547" frameX="0" frameY="-2" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0008" x="1303" y="5" width="644" height="547" frameX="0" frameY="-2" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0009" x="654" y="5" width="644" height="547" frameX="0" frameY="0" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0010" x="5" y="5" width="644" height="547" frameX="0" frameY="0" frameWidth="644" frameHeight="551"/>
+	<SubTexture name="hellicopet0011" x="654" y="5" width="644" height="547" frameX="0" frameY="0" frameWidth="644" frameHeight="551"/>
+</TextureAtlas>
