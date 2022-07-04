@@ -72,7 +72,7 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuUn'));
+		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuUn', 'shared'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -80,7 +80,7 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
-	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuAb'));
+	        var bga:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('desp/menu/menuAb', 'shared'));
 		//bga.scrollFactor.set(0, yScroll);
 		//bga.setGraphicSize(Std.int(bga.width * 1.175));
 		bga.updateHitbox();
